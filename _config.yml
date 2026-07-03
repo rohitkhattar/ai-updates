@@ -18,6 +18,10 @@ minima:
 # Clean date-based URLs that scale by year/month: /2026/07/03/x-tech-ai-trends/
 permalink: /:year/:month/:day/:title/
 
+# Posts are datestamped 20:00 IST; builds can run earlier the same day —
+# without this Jekyll would silently drop the "future-dated" post
+future: true
+
 # Homepage pagination (jekyll-paginate is whitelisted on GitHub Pages)
 paginate: 10
 paginate_path: "/page:num/"
