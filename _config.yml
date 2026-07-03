@@ -1,0 +1,45 @@
+title: Daily AI Trends
+description: >-
+  A daily curated digest of tech & AI trends from X (Twitter),
+  auto-published every evening by a scheduled agent.
+author: Rohit Khattar
+lang: en
+timezone: Asia/Kolkata
+
+# Theme — minima is bundled with GitHub Pages, zero extra tooling
+theme: minima
+minima:
+  date_format: "%-d %B %Y"
+
+# Clean date-based URLs that scale by year/month: /2026/07/03/x-tech-ai-trends/
+permalink: /:year/:month/:day/:title/
+
+# Homepage pagination (jekyll-paginate is whitelisted on GitHub Pages)
+paginate: 10
+paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+header_pages:
+  - archive.md
+  - about.md
+
+# Post defaults so daily files need minimal front matter
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: tech-ai-trends bot
+
+exclude:
+  - use-case.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
