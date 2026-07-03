@@ -1,0 +1,173 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// ---- Overrides (must precede the import) ----
+$base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+$base-line-height: 1.65;
+$spacing-unit:     34px;
+$brand-color:      #4f46e5;
+$content-width:    720px;
+
+@import "minima";
+
+// ---- Site header ----
+.site-header {
+  border-top: none;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+.site-title {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.site-nav .page-link {
+  font-weight: 500;
+}
+
+.site-nav .page-link:not(:last-child) {
+  margin-right: 24px;
+}
+
+// ---- Homepage post list ----
+.post-list-heading {
+  font-size: $small-font-size;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $grey-color;
+  margin-bottom: $spacing-unit;
+}
+
+.post-list {
+  margin-left: 0;
+  list-style: none;
+}
+
+.post-list > li {
+  padding: 26px 0;
+  border-bottom: 1px solid $grey-color-light;
+}
+
+.post-list > li:first-child {
+  padding-top: 0;
+}
+
+.post-list .post-meta {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 12px;
+}
+
+.post-list h3 {
+  margin: 4px 0 0;
+}
+
+.post-list h3 .post-link {
+  font-weight: 700;
+}
+
+.post-link:hover {
+  color: $brand-color;
+}
+
+// ---- Individual post ----
+.post-header {
+  margin-bottom: $spacing-unit;
+  padding-bottom: $spacing-unit / 2;
+  border-bottom: 2px solid $text-color;
+}
+
+.post-title {
+  letter-spacing: -0.02em;
+}
+
+.post-content h2 {
+  font-size: 1.45rem;
+  margin-top: 2.4rem;
+  padding-left: 14px;
+  border-left: 4px solid $brand-color;
+}
+
+.post-content h2:first-of-type {
+  margin-top: 0.5rem;
+}
+
+.post-content hr {
+  border: none;
+  border-top: 1px solid $grey-color-light;
+  margin: 2.2rem 0;
+}
+
+// The lone-link paragraph produced by "[Source](url)" — styled as a pill
+.post-content p > a:only-child {
+  display: inline-block;
+  margin-top: 2px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: $brand-color;
+  background: rgba($brand-color, 0.08);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background 0.15s ease;
+}
+
+.post-content p > a:only-child:hover {
+  background: rgba($brand-color, 0.16);
+}
+
+.post-content p > a:only-child::after {
+  content: " \2192";
+}
+
+// ---- Footer ----
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+}
+
+// ---- Dark mode ----
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f1115;
+    color: #e6e6e6;
+  }
+
+  .site-header,
+  .site-footer {
+    border-color: #262933;
+  }
+
+  .site-title,
+  .post-title,
+  .page-heading {
+    color: #f5f5f5;
+  }
+
+  .site-nav .page-link,
+  .post-meta,
+  .footer-col p {
+    color: #b3b3b3;
+  }
+
+  .post-list > li {
+    border-color: #262933;
+  }
+
+  .post-header {
+    border-color: #3a3d47;
+  }
+
+  .post-content hr {
+    border-color: #262933;
+  }
+
+  .post-content p > a:only-child {
+    background: rgba(129, 140, 248, 0.16);
+    color: #a5adfb;
+  }
+
+  .post-content p > a:only-child:hover {
+    background: rgba(129, 140, 248, 0.26);
+  }
+}

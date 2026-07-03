@@ -28,7 +28,7 @@ date: YYYY-MM-DD 20:00:00 +0530
 
 ## 1. <Trend title>
 
-**Why it's trending:** <one–two sentence explanation>
+<3–5 sentence description — detailed, technical, and written to make the reader want to click through>
 
 [Source](<link>)
 
