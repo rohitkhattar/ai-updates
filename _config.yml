@@ -6,6 +6,10 @@ author: Rohit Khattar
 lang: en
 timezone: Asia/Kolkata
 
+# Project-pages site is served under this subpath
+url: "https://rohitkhattar.github.io"
+baseurl: "/ai-updates"
+
 # Theme — minima is bundled with GitHub Pages, zero extra tooling
 theme: minima
 minima:
