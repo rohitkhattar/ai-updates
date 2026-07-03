@@ -1,6 +1,6 @@
 # ai-updates — Daily AI Trends site
 
-Auto-published daily digest of tech/AI trends from X (Twitter). See `use-case.md` for the full problem statement.
+Auto-published daily digest of tech/AI trends. See `use-case.md` for the full problem statement.
 
 ## How it works
 
@@ -8,7 +8,7 @@ Auto-published daily digest of tech/AI trends from X (Twitter). See `use-case.md
 scheduled task "tech-ai-trends" (daily, evening)
         │  curates 5–8 trend items via web search
         ▼
-_posts/YYYY-MM-DD-x-tech-ai-trends.md   (Jekyll post, front matter below)
+_posts/YYYY-MM-DD-tech-ai-trends.md   (Jekyll post, front matter below)
         │  git commit + git push origin main
         ▼
 GitHub Pages (Jekyll build)  →  site updates automatically
@@ -18,11 +18,11 @@ No manual index upkeep: Jekyll generates the paginated homepage, `/archive/` (gr
 
 ## Post format the scheduled task must write
 
-File: `_posts/YYYY-MM-DD-x-tech-ai-trends.md`
+File: `_posts/YYYY-MM-DD-tech-ai-trends.md`
 
 ```markdown
 ---
-title: "X Tech & AI Trends — D Month YYYY"
+title: "Tech & AI Trends — D Month YYYY"
 date: YYYY-MM-DD 20:00:00 +0530
 ---
 
@@ -46,7 +46,7 @@ After writing the day's post into `_posts/`:
 ```bash
 cd "<this repo>"
 git add _posts/
-git commit -m "digest: YYYY-MM-DD x tech/ai trends"
+git commit -m "digest: YYYY-MM-DD tech/ai trends"
 git push origin main
 ```
 

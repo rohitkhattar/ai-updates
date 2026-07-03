@@ -1,6 +1,6 @@
 title: Daily AI Trends
 description: >-
-  A daily curated digest of tech & AI trends from X (Twitter),
+  A daily curated digest of tech & AI trends,
   auto-published every evening by a scheduled agent.
 author: Rohit Khattar
 lang: en
@@ -15,7 +15,7 @@ theme: minima
 minima:
   date_format: "%-d %B %Y"
 
-# Clean date-based URLs that scale by year/month: /2026/07/03/x-tech-ai-trends/
+# Clean date-based URLs that scale by year/month: /2026/07/03/tech-ai-trends/
 permalink: /:year/:month/:day/:title/
 
 # Posts are datestamped 20:00 IST; builds can run earlier the same day —

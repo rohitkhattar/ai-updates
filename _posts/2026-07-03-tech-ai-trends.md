@@ -1,5 +1,5 @@
 ---
-title: "X Tech & AI Trends — 3 July 2026"
+title: "Tech & AI Trends — 3 July 2026"
 date: 2026-07-03 20:00:00 +0530
 ---
 
